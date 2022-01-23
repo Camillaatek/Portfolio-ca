@@ -130,12 +130,13 @@ a {
   }
 }
 
+@use "variables";
 .main-section {
   text-align: center;
 }
 
 .main-section h1 {
-  color: white;
+  color: #b15a5a;
   margin-bottom: 0px;
 }
 
@@ -148,7 +149,7 @@ a {
 }
 
 .main-section p {
-  color: white;
+  color: #1bda0a;
   margin-top: 0px;
   opacity: 60%;
 }
