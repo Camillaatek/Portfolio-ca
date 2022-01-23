@@ -1,0 +1,34 @@
+.main-section{
+    text-align: center;
+    h1{
+        color: white;
+       margin-bottom: 0px;
+    }
+    span {
+        font-size: 72px;
+        background-image: linear-gradient(to right, #DB00FF, #00C2FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        color: white;
+      margin-top: 0px;
+      opacity: 60%;
+    }
+
+    img {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
+    .work {
+        color: white;
+        border-radius: 20px;
+        border: none;
+        background-image: linear-gradient(to right, #DB00FF, #230C59);
+        padding: 5px 10px 5px 10px;
+       
+    }
+}
+
