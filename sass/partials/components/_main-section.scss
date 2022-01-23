@@ -1,7 +1,10 @@
+@use "variables";
+
 .main-section{
+    font-family: variables.$roboto;
     text-align: center;
     h1{
-        color: white;
+        color: rgb(41, 4, 4);
        margin-bottom: 0px;
     }
     span {
@@ -28,7 +31,7 @@
         border: none;
         background-image: linear-gradient(to right, #DB00FF, #230C59);
         padding: 5px 10px 5px 10px;
-       
+       margin: 20px;
     }
 }
 
