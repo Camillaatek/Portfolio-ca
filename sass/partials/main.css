@@ -179,7 +179,7 @@ a {
   display: -ms-grid;
   display: grid;
   position: relative;
-  -ms-grid-columns: (1fr)[1];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(1, 1fr);
   height: 500px;
   max-width: 100px;
@@ -247,6 +247,31 @@ a {
 
 .skill-container .modeling h3 {
   color: #ff7300;
+}
+
+.projects-container {
+  color: white;
+}
+
+.projects-container img {
+  width: 80%;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.projects-container .work {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#DB00FF), to(#230C59));
+  background-image: linear-gradient(to right, #DB00FF, #230C59);
+  padding: 5px 10px 5px 10px;
+  margin: 20px;
+}
+
+.contact-container h2 {
+  color: #f74600;
 }
 
 body {
