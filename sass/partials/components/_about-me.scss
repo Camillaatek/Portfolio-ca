@@ -6,22 +6,62 @@
 }
 
 .pics-container {
-    .image-stack {
-         display: grid;
+    scale: 40%;
+    display: grid;
     position: relative; // imperative for the overlapping to work
-    grid-template-columns: repeat(12, 1fr);
-    }
-   
+    grid-template-columns: repeat(1, 1fr);
+    height: 500px;
+
+    max-width: 100px;
+    margin: auto 100;
     .top-picture {
+        
         grid-row: 1;
-        grid-column: 1 / span 8;
-        padding-top: 20%; // slightly arbitrary, keeps proportion once resized
+        grid-column: 1 / span 2;
         z-index: 1; // tells the browser to make this image on top
     
     }
     .mid-picture {
         grid-column: 4 / -1;
         grid-row: 1;
+        scale: 70%;
     
+    }
+}
+
+.skill-container {
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+    .development {
+        margin:10px;
+        h3 {
+            color: rgb(0, 217, 255);
+        }
+        color: white;
+        border-radius: 20px;
+        padding: 10px 20px 10px 20px;
+        background-image: linear-gradient(to right, #DB00FF, #230C59);
+    }
+    .design {
+        h3 {
+            color: rgb(204, 0, 255);
+        }
+        margin:10px;
+        color: white;
+        border-radius: 20px;
+        padding: 10px 20px 10px 20px;
+        background-image: linear-gradient(to right, #01268b, #1f9dcf);
+    }
+    .modeling {
+        h3 {
+            color: rgb(255, 115, 0);
+        }
+        margin:10px;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 10px 20px 10px 20px;
+        background-image: linear-gradient(to right, #440083, #000549);
     }
 }

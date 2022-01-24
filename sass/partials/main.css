@@ -1,7 +1,3 @@
-* {
-  background: #090921;
-}
-
 li {
   list-style: none;
 }
@@ -178,21 +174,24 @@ a {
   color: #00C2FF;
 }
 
-.pics-container .image-stack {
+.pics-container {
+  scale: 40%;
   display: -ms-grid;
   display: grid;
   position: relative;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  height: 500px;
+  max-width: 100px;
+  margin: auto 100;
 }
 
 .pics-container .top-picture {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1 / span 8;
-  padding-top: 20%;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
   z-index: 1;
 }
 
@@ -200,5 +199,57 @@ a {
   grid-column: 4 / -1;
   -ms-grid-row: 1;
   grid-row: 1;
+  scale: 70%;
+}
+
+.skill-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  color: white;
+}
+
+.skill-container .development {
+  margin: 10px;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#DB00FF), to(#230C59));
+  background-image: linear-gradient(to right, #DB00FF, #230C59);
+}
+
+.skill-container .development h3 {
+  color: #00d9ff;
+}
+
+.skill-container .design {
+  margin: 10px;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01268b), to(#1f9dcf));
+  background-image: linear-gradient(to right, #01268b, #1f9dcf);
+}
+
+.skill-container .design h3 {
+  color: #cc00ff;
+}
+
+.skill-container .modeling {
+  margin: 10px;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#440083), to(#000549));
+  background-image: linear-gradient(to right, #440083, #000549);
+}
+
+.skill-container .modeling h3 {
+  color: #ff7300;
+}
+
+body {
+  background: #090921;
 }
 /*# sourceMappingURL=main.css.map */
