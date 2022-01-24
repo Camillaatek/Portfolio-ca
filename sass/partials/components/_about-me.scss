@@ -3,32 +3,15 @@
     span {
         color: #00C2FF;
     }
-}
-
-.pics-container {
-    scale: 40%;
-    display: grid;
-    position: relative; // imperative for the overlapping to work
-    grid-template-columns: repeat(1, 1fr);
-    height: 500px;
-
-    max-width: 100px;
-    margin: auto 100;
-    .top-picture {
-        
-        grid-row: 1;
-        grid-column: 1 / span 2;
-        z-index: 1; // tells the browser to make this image on top
-    
+    .pics-container{
+    display: flex;
+    justify-content: center;
     }
-    .mid-picture {
-        grid-column: 4 / -1;
-        grid-row: 1;
-        scale: 70%;
-    
+
+    .top-picture{
+    width: 200px;
     }
 }
-
 .skill-container {
     
     display: grid;
@@ -63,5 +46,19 @@
         border-radius: 20px;
         padding: 10px 20px 10px 20px;
         background-image: linear-gradient(to right, #440083, #000549);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-text {
+        padding-left: 20px;
+    }
+    .skill-container {
+        display: flex;
+        flex-wrap: nowrap;
     }
 }

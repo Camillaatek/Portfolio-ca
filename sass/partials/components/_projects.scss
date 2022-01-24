@@ -1,12 +1,12 @@
 .projects-container {
-    img {
+    margin-top: 100px;
+    color: white;
+        img {
         width: 80%;
-border-radius: 10px;
-display: grid;
-
-
-    }
-     color: white;
+        border-radius: 10px;
+        display: grid;
+        }
+     
      .work {
         color: white;
         border-radius: 20px;
@@ -14,5 +14,16 @@ display: grid;
         background-image: linear-gradient(to right, #DB00FF, #230C59);
         padding: 5px 10px 5px 10px;
        margin: 20px;
+    }
+    
+    span {
+        color: #DB00FF;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid-projects {
+        display: flex;
+        flex-wrap: nowrap;
     }
 }

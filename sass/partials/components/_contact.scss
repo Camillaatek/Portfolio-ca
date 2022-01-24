@@ -1,6 +1,8 @@
-.contact-container {
-    h2 {
-        color: rgb(0, 255, 149);
-    }
+div.contact-container h2 {
+        font-size: 72px;
+        background-image: linear-gradient(to right, #e64646, #00C2FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
     
 }
