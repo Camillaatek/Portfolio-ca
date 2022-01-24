@@ -1,13 +1,13 @@
-@use "variables";
+// @use "variables";
 
 .main-section{
     
   
     text-align: center;
     h1{
-        color: rgb(255, 217, 0);
+        color: rgb(255, 255, 255);
        margin-bottom: 0px;
-         font-family: variables.$roboto;
+        //  font-family: variables.$roboto;
     }
     span {
         font-size: 72px;
@@ -16,7 +16,7 @@
         -webkit-text-fill-color: transparent;
     }
     p {
-        color: rgb(218, 10, 208);
+        color: rgb(255, 255, 255);
       margin-top: 0px;
       opacity: 60%;
     }

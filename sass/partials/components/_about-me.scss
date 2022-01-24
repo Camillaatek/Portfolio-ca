@@ -1,0 +1,27 @@
+.about-container {
+    color: white;
+    span {
+        color: #00C2FF;
+    }
+}
+
+.pics-container {
+    .image-stack {
+         display: grid;
+    position: relative; // imperative for the overlapping to work
+    grid-template-columns: repeat(12, 1fr);
+    }
+   
+    .top-picture {
+        grid-row: 1;
+        grid-column: 1 / span 8;
+        padding-top: 20%; // slightly arbitrary, keeps proportion once resized
+        z-index: 1; // tells the browser to make this image on top
+    
+    }
+    .mid-picture {
+        grid-column: 4 / -1;
+        grid-row: 1;
+    
+    }
+}

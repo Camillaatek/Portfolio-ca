@@ -130,13 +130,12 @@ a {
   }
 }
 
-@use "variables";
 .main-section {
   text-align: center;
 }
 
 .main-section h1 {
-  color: #b15a5a;
+  color: white;
   margin-bottom: 0px;
 }
 
@@ -149,7 +148,7 @@ a {
 }
 
 .main-section p {
-  color: #1bda0a;
+  color: white;
   margin-top: 0px;
   opacity: 60%;
 }
@@ -169,5 +168,37 @@ a {
   background-image: linear-gradient(to right, #DB00FF, #230C59);
   padding: 5px 10px 5px 10px;
   margin: 20px;
+}
+
+.about-container {
+  color: white;
+}
+
+.about-container span {
+  color: #00C2FF;
+}
+
+.pics-container .image-stack {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.pics-container .top-picture {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / span 8;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+.pics-container .mid-picture {
+  grid-column: 4 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 /*# sourceMappingURL=main.css.map */
